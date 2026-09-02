@@ -489,6 +489,7 @@
             // 4. Correction de l'écran noir en fin de vidéo (Boucle forcée)
             const heroVideo = document.getElementById('hero-video');
             if(heroVideo) {
+                heroVideo.playbackRate = 0.8;
                 heroVideo.addEventListener('timeupdate', function() {
                     // Si l'écran noir dure exactement 1 seconde, on coupe 1 seconde avant la fin totale.
                     // Modifiez le "1" ci-dessous si l'écran noir est plus court (ex: 0.5)
