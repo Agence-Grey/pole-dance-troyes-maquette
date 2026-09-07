@@ -1,0 +1,14 @@
+/* =====================================================================
+   LES VERTS DU SITE
+   Change les trois valeurs ci-dessous (format "R G B") et tout le site
+   suit automatiquement. C'est le seul endroit à toucher.
+
+   Pour convertir un hex (#RRGGBB) en "R G B" :
+     R = rouge, G = vert, B = bleu (en décimal).
+     Ex: #5A7854  ->  5A=90, 78=120, 54=84  ->  "90 120 84"
+   ===================================================================== */
+:root {
+    --brand-green: 90 120 84;        /* #5A7854 — vert principal : accent, fonds de section, survols */
+    --brand-green-light: 88 116 91;  /* #58745B — vert sauge : textes secondaires sur fonds clairs */
+    --brand-green-dark: 61 90 63;    /* #3D5A3F — vert sombre : textes principaux, voile du hero */
+}

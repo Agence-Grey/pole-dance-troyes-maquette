@@ -21,9 +21,9 @@
                         brand: {
                             cream: '#FAF7F2',       /* Fond principal chaud */
                             creamDark: '#F0EBE1',   /* Fond secondaire */
-                            green: '#5A7854',       /* Vert principal */
-                            greenLight: '#58745B',  /* Vert sauge (texte secondaire) */
-                            greenDark: '#3D5A3F',   /* Vert sombre (texte & fonds pleins) */
+                            green: 'rgb(var(--brand-green) / <alpha-value>)',
+                            greenLight: 'rgb(var(--brand-green-light) / <alpha-value>)',
+                            greenDark: 'rgb(var(--brand-green-dark) / <alpha-value>)',
                             gold: '#C5A880'         /* Accent doré subtil */
                         }
                     },
@@ -36,15 +36,18 @@
         }
     </script>
 
+    <!-- Couleurs du site (verts) : à modifier dans colors.css -->
+    <link rel="stylesheet" href="colors.css">
+
     <style>
         body {
             background-color: #FAF7F2;
-            color: #3D5A3F;
+            color: rgb(var(--brand-green-dark));
         }
 
         /* Hero Video Overlay for readability */
         .hero-overlay {
-            background: linear-gradient(to bottom, rgba(61,90,63,0.35) 0%, rgba(61,90,63,0.65) 100%);
+            background: linear-gradient(to bottom, rgb(var(--brand-green-dark) / 0.35) 0%, rgb(var(--brand-green-dark) / 0.65) 100%);
         }
 
         /* Hover Zoom for Gallery & Cards */
